@@ -7,6 +7,7 @@ const App = () => {
   const [todos, setTodos] = useState([]);
   const [editTodo, setEditTodo] = useState(null);
   return (
+    <div>
     <div className="container">
         <h2 className="title">Todo App</h2>
         <AddTodo
@@ -17,9 +18,10 @@ const App = () => {
           editTodo={editTodo}
           setEditTodo={setEditTodo}
         />
-        <TodoList todos={todos} setTodos={setTodos} setEditTodo={setEditTodo} />,
+        <TodoList todos={todos} setTodos={setTodos} setEditTodo={setEditTodo} />
         
       </div>
+    </div>
   );
 };
 

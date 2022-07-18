@@ -1,4 +1,4 @@
-import { faPenToSquare, faSquarePlus } from "@fortawesome/free-solid-svg-icons";
+import { faPenToSquare, faPlus,} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useEffect } from "react";
 import { v4 as uuidv4 } from "uuid";
@@ -32,6 +32,7 @@ const Todoapp = ({ input, setInput, todos, setTodos, editTodo, setEditTodo }) =>
   return (
     <div className="add-todo-container">
       <input
+        
         type="text"
         placeholder= "Add your new todo..."
         className="task-input"
@@ -43,7 +44,7 @@ const Todoapp = ({ input, setInput, todos, setTodos, editTodo, setEditTodo }) =>
        
 
       <button onClick={onClickAdd} className="button-add" type="submit">
-       {editTodo ? <FontAwesomeIcon icon={faPenToSquare} />   : <FontAwesomeIcon icon={faSquarePlus} />}
+       {editTodo ? <FontAwesomeIcon color="#FFB300" icon={faPenToSquare} />   : <FontAwesomeIcon color="#fff" icon={faPlus} />}
       </button>
       </div>
 

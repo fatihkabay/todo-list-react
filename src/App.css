@@ -3,11 +3,12 @@
   flex-direction: column;
   align-items: center;
   width: 50%;
-  background-color: rgb(236, 239, 255);
+  background-color: #fff;
   border-radius: 5px;
-  box-shadow: 0 0 30px 0 rgb(27, 27, 27);
+  box-shadow: 0 0 10px 0 rgb(27, 27, 27);
   margin: auto;
   min-height: 600px;
+  max-width: 500px;
 }
 
 .task-input {
@@ -20,12 +21,13 @@
   width: 35px;
   height: 35px;
   border-radius: 6px;
-  background-color: rgb(255, 203, 160);
+  background-color: #42A5F5;
 }
 
 .add-todo-container {
   display: flex;
   gap: 20px;
+  width: 80%;
 }
 
 .list-item {
@@ -51,4 +53,11 @@ button {
 
 .todo-text {
    width: 130px;
+   
 }
+
+
+
+
+
+
