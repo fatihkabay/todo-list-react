@@ -32,19 +32,17 @@ const Todoapp = ({ input, setInput, todos, setTodos, editTodo, setEditTodo }) =>
   return (
     <div className="add-todo-container">
       <input
-        
         type="text"
         placeholder= "Add your new todo..."
         className="task-input"
         value={input}
         required
         onChange={onInputChange}
-        
       />
-       
+   
 
       <button onClick={onClickAdd} className="button-add" type="submit">
-       {editTodo ? <FontAwesomeIcon color="#FFB300" icon={faPenToSquare} />   : <FontAwesomeIcon color="#fff" icon={faPlus} />}
+       {editTodo ? <FontAwesomeIcon color="#fff" icon={faPenToSquare} />   : <FontAwesomeIcon color="#fff" icon={faPlus} />}
       </button>
       </div>
 

@@ -7,13 +7,15 @@
   border-radius: 5px;
   box-shadow: 0 0 10px 0 rgb(27, 27, 27);
   margin: auto;
-  min-height: 600px;
-  max-width: 500px;
+  min-height: 650px;
+  max-width: 600px;
+  align-items: flex-start;
+  padding: 0 50px;
 }
 
 .task-input {
   height: 30px;
-  width: 70%;
+  width: 80%;
   border-radius: 7px;
 }
 
@@ -33,6 +35,9 @@
 .list-item {
   display: flex;
   gap: 5px;
+  background-color: #eeeeee;
+  align-items: center;
+  border-radius: 5px;
 }
 
 .todo-list {
@@ -43,6 +48,7 @@
 }
 
 button {
+  height: 25px;
   border-width: 0;
   cursor: pointer;
 }
@@ -52,10 +58,19 @@ button {
 }
 
 .todo-text {
-   width: 130px;
-   
+   display: flex;
+   width: 220px;
+   align-items: center;
+   height: 40px;
+   padding: 0 20px;
 }
 
+@media screen and (max-width: 426px){
+  .container{
+    width: 100%;
+  }
+  
+}
 
 
 
