@@ -41,7 +41,7 @@ const Todoapp = ({ input, setInput, todos, setTodos, editTodo, setEditTodo }) =>
       />
    
 
-      <button onClick={onClickAdd} className="button-add" type="submit">
+      <button disabled={input.length < 3} onClick={onClickAdd} className="button-add" type="submit">
        {editTodo ? <FontAwesomeIcon color="#fff" icon={faPenToSquare} />   : <FontAwesomeIcon color="#fff" icon={faPlus} />}
       </button>
       </div>

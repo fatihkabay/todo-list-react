@@ -1,35 +1,38 @@
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 50%;
-  background-color: #fff;
-  border-radius: 5px;
-  box-shadow: 0 0 10px 0 rgb(27, 27, 27);
-  margin: auto;
-  min-height: 650px;
-  max-width: 600px;
-  align-items: flex-start;
-  padding: 0 50px;
-}
-
-.task-input {
-  height: 30px;
-  width: 80%;
-  border-radius: 7px;
-}
-
-.button-add {
-  width: 35px;
-  height: 35px;
-  border-radius: 6px;
-  background-color: #42A5F5;
-}
-
 .add-todo-container {
   display: flex;
-  gap: 20px;
-  width: 80%;
+  gap: 10px;
+  height: 30px;
+  border-radius: 6px;
+}
+
+.button-add{
+  width: 30px;
+  height: 30px;
+  background-color: #29B6F6;
+  border-width: 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button-add:disabled {
+  background-color: #cde3ee;
+}
+
+button {
+  cursor: pointer; 
+  border-width: 0;
+  
+}
+
+.all-todo-list {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0;
+  gap: 10px;
+}
+
+.completed-todo {
+  text-decoration: line-through;
 }
 
 .list-item {
@@ -39,40 +42,4 @@
   align-items: center;
   border-radius: 5px;
 }
-
-.todo-list {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  margin: 20px 0;
-}
-
-button {
-  height: 25px;
-  border-width: 0;
-  cursor: pointer;
-}
-
-.completed-todo {
-   text-decoration: line-through;
-}
-
-.todo-text {
-   display: flex;
-   width: 220px;
-   align-items: center;
-   height: 40px;
-   padding: 0 20px;
-}
-
-@media screen and (max-width: 426px){
-  .container{
-    width: 100%;
-  }
-  
-}
-
-
-
-
-
+ 

@@ -22,7 +22,8 @@ const TodoList = ({ todos, setTodos, setEditTodo }) => {
     setTodos(todos.filter((todo) => todo.id !== id));
   };
   return (
-    <div className="todo-list" >
+    
+    <div className="all-todo-list" >
       {todos.map((todo) => (
         
           <div className="list-item" key={todo.id}>
@@ -38,7 +39,6 @@ const TodoList = ({ todos, setTodos, setEditTodo }) => {
               <i className="fa fa-trash" />
               <FontAwesomeIcon color="#D32F2F" icon={faTrash} />
             </button>
-            
           </div>
       ))}
     </div>

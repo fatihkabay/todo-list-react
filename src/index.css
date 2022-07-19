@@ -1,8 +1,28 @@
 body {
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: #F9FBE7;
-  margin: 40px;
+  padding: 0;
+  background-color: #FFFDE7; 
+  margin: 20px;
 }
 
+.container{
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  background-color: #fff;
+  box-shadow: 0 0 4px 1px #37474F;
+  min-height: 500px;
+  border-radius: 6px;
+  margin: auto;
+  align-items: center;
+}
+
+@media screen and (max-width: 500px) {
+  .container{
+    border-radius: 0;
+    width: 100%;
+    box-shadow: 0 0 0 0;
+  }
+  body{
+    margin: 0;
+  }
+}
