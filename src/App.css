@@ -5,7 +5,7 @@
   border-radius: 6px;
 }
 
-.button-add{
+.button-add {
   width: 30px;
   height: 30px;
   background-color: #29B6F6;
@@ -21,7 +21,7 @@
 button {
   cursor: pointer; 
   border-width: 0;
-  
+  background-color: #eeeeee;
 }
 
 .all-todo-list {
@@ -42,4 +42,8 @@ button {
   align-items: center;
   border-radius: 5px;
 }
+
+
+
+
  

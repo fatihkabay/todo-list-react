@@ -4,7 +4,7 @@ body {
   margin: 20px;
 }
 
-.container{
+.container {
   display: flex;
   flex-direction: column;
   max-width: 500px;
@@ -16,13 +16,29 @@ body {
   align-items: center;
 }
 
+.title {
+  font-family:Arial, Helvetica, sans-serif;
+}
+
 @media screen and (max-width: 500px) {
-  .container{
+  .container {
     border-radius: 0;
     width: 100%;
     box-shadow: 0 0 0 0;
   }
-  body{
+
+  body {
     margin: 0;
+    background-color: #fff;
+  }
+
+  .task-input {
+    width: 250px;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .task-input {
+    width: 325px;
   }
 }
