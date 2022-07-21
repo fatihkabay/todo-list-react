@@ -1,3 +1,6 @@
+localStorage.setItem('items', JSON.stringify(window));
+localStorage.setItem('items', JSON.stringify(window));
+
 import React, { useState } from "react";
 import AddTodo from "./components/AddTodo";
 import TodoList from "./components/TodoList";
@@ -7,8 +10,9 @@ const App = () => {
   const [todos, setTodos] = useState([]);
   const [editTodo, setEditTodo] = useState(null);
   return (
-    <div>
-    <div className="container">
+     <div id="root">
+      <div className="container">
+        
         <h2 className="title">Todo App</h2>
         <AddTodo
           input={input}
@@ -19,9 +23,21 @@ const App = () => {
           setEditTodo={setEditTodo}
         />
         <TodoList todos={todos} setTodos={setTodos} setEditTodo={setEditTodo} />
-        
-      </div>
-    </div>
+        <div className="footer-button">
+          <div className="list-info">You Have {todos.filter((p) => !p.completed).length} Pending Tasks</div>
+          <button
+            disabled={todos.length < 1}
+            onClick={() => {
+              setTodos([]);
+            }}
+            className="all-delete-button"
+          >
+             Clear All
+           </button>
+         </div>
+       </div>
+        <span className="created-name">Created by Fatih Kabay</span>
+     </div>
   );
 };
 

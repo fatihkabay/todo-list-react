@@ -1,7 +1,16 @@
 body {
   padding: 0;
-  background-color: #FFFDE7; 
-  margin: 20px;
+  margin: 0;
+  background-color: #FFFDE7;
+  height: 100vh;
+}
+
+#root {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .container {
@@ -9,36 +18,55 @@ body {
   flex-direction: column;
   max-width: 500px;
   background-color: #fff;
-  box-shadow: 0 0 4px 1px #37474F;
-  min-height: 500px;
+  box-shadow: 0 0 4px 1px #37474f;
   border-radius: 6px;
-  margin: auto;
-  align-items: center;
+  align-items: flex-start;
+  padding: 30px
 }
 
 .title {
-  font-family:Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 @media screen and (max-width: 500px) {
   .container {
+    display: flex;
+    justify-content: flex-start;
     border-radius: 0;
     width: 100%;
     box-shadow: 0 0 0 0;
+    margin: auto;
+    padding: 0;
   }
 
   body {
     margin: 0;
+    padding: 0;
     background-color: #fff;
   }
 
   .task-input {
-    width: 250px;
+    width: 275px;
   }
+
+  .todo-text {
+    width: 230px;
+  }
+
+  .list-item {
+    width: 230px;
+    border-radius: 10px;
+  }
+
 }
 
 @media screen and (min-width: 500px) {
   .task-input {
     width: 325px;
   }
+
+  .todo-text {
+    width: 275px;
+  }
+
 }
