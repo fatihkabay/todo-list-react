@@ -32,11 +32,10 @@ button {
   gap: 7px;
   max-height: 300px;
   overflow-y: scroll;
-  outline: 0px solid slategrey;
 }
 
 .all-todo-list::-webkit-scrollbar {
-  width: 15px;
+  display: none;
 }
 
 .completed-todo {
@@ -71,8 +70,8 @@ button {
 .footer-button {
   width: 100%;
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
 }
 
 .all-delete-button:disabled {

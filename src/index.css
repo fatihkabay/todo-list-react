@@ -18,7 +18,7 @@ body {
   flex-direction: column;
   max-width: 500px;
   background-color: #fff;
-  box-shadow: 0 0 4px 1px #37474f;
+  box-shadow: 3px 3px 1px 0.1px #b9bec1;
   border-radius: 6px;
   align-items: flex-start;
   padding: 30px
@@ -31,12 +31,17 @@ body {
 @media screen and (max-width: 500px) {
   .container {
     display: flex;
-    justify-content: flex-start;
+    align-items: flex-start;
     border-radius: 0;
     width: 100%;
     box-shadow: 0 0 0 0;
-    margin: auto;
     padding: 0;
+  }
+ 
+  #root {
+    display: inline-block;
+    display: flex;
+    justify-content: start;
   }
 
   body {
@@ -46,7 +51,7 @@ body {
   }
 
   .task-input {
-    width: 275px;
+    width: 285px;
   }
 
   .todo-text {
@@ -57,12 +62,12 @@ body {
     width: 230px;
     border-radius: 10px;
   }
-
+ 
 }
 
 @media screen and (min-width: 500px) {
   .task-input {
-    width: 325px;
+    width: 335px;
   }
 
   .todo-text {
