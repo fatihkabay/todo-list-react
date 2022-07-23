@@ -31,7 +31,7 @@ body {
 @media screen and (max-width: 500px) {
   .container {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     border-radius: 0;
     width: 100%;
     box-shadow: 0 0 0 0;
@@ -50,19 +50,13 @@ body {
     background-color: #fff;
   }
 
-  .task-input {
-    width: 285px;
+  .task-input{
+    width: 275px;
   }
 
   .todo-text {
     width: 230px;
   }
-
-  .list-item {
-    width: 230px;
-    border-radius: 10px;
-  }
- 
 }
 
 @media screen and (min-width: 500px) {
