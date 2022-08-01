@@ -32,7 +32,7 @@ const Todoapp = ({ input, setInput, todos, setTodos, editTodo, setEditTodo }) =>
   return (
     <div className="add-todo-container">
       <input
-        type="text"
+        type="search"
         placeholder= "Add your new todo..."
         className="task-input"
         value={input}
